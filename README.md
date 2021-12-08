@@ -28,6 +28,10 @@ The dataset is downloaded from [stroke prediction dataset](https://www.kaggle.co
 
 There are 3.93\% missing data of BMI variable and we impute them with the mean of BMI.  The response variable "Stroke" from the bottom right is highly imbalanced, with 4861 subjects without any stroke while only 249 subjects with a stroke. There is one subject with gender as other and will be deleted for further convenience.
 
+## Model selection
+
+We fit logistic regression as a benchmark model and compare it with KNN classifier and Random Forest. 30\% of the data is randomly chosen as the test set and models are fit based on 70\% of the data left.
+
 Before applying SMOTE, we fit logistic regression, KNN and random forest tuned based on grid search with cross validation. Even though all three models get a high accuracy as around 0.95, they tend to predict all the subjects in the test set to be free of stroke, since the respondent variable stroke is so imbalanced that the non-stroke subjects would not make a huge difference on the outcome.
 
 
