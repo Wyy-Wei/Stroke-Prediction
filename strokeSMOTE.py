@@ -406,11 +406,3 @@ ax[2].set_xlabel("Predicted label")
 ax[0].set_ylabel("True label")
 plt.tight_layout()
 plt.show()
-
-
-
-
-
-
-
-
