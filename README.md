@@ -28,6 +28,9 @@ The dataset is downloaded from [stroke prediction dataset](https://www.kaggle.co
 
 There are 3.93\% missing data of BMI variable and we impute them with the mean of BMI.  The response variable "Stroke" from the bottom right is highly imbalanced, with 4861 subjects without any stroke while only 249 subjects with a stroke. There is one subject with gender as other and will be deleted for further convenience.
 
+![corr](https://user-images.githubusercontent.com/53469433/153347482-3f87a25c-6bad-45bc-953b-5ede7e7a0b2d.png)
+
+
 ## Model selection
 
 We fit logistic regression as a benchmark model and compare it with KNN classifier and Random Forest. 30\% of the data is randomly chosen as the test set and models are fit based on 70\% of the data left.
