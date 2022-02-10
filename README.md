@@ -30,6 +30,9 @@ There are 3.93\% missing data of BMI variable and we impute them with the mean o
 
 ![corr](https://user-images.githubusercontent.com/53469433/153347482-3f87a25c-6bad-45bc-953b-5ede7e7a0b2d.png)
 
+Based on the correlation matrix, work type as focusing on the family and children is correlated with the age, bmi and marital status of the subject, which makes sense for demographical and sociological reasons.
+
+
 
 ## Model selection
 
