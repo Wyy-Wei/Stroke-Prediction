@@ -26,12 +26,19 @@ The dataset is downloaded from [stroke prediction dataset](https://www.kaggle.co
 * stroke: 1 if the patient had a stroke or 0 if not.
 
 
-There are 3.93\% missing data of BMI variable and we impute them with the mean of BMI.  The response variable "Stroke" from the bottom right is highly imbalanced, with 4861 subjects without any stroke while only 249 subjects with a stroke. There is one subject with gender as other and will be deleted for further convenience.
+There are 3.93\% missing data of BMI variable and we impute them with the mean of BMI. Then we plot the histograms of the categorical variables. The response variable "Stroke" from the bottom right is highly imbalanced, with 4861 subjects without any stroke while only 249 subjects with a stroke. There is one subject with gender as other and will be deleted for further convenience.
+
+![cat](https://user-images.githubusercontent.com/53469433/153496909-c36ffd0c-5bc4-4626-98ab-94db6f80560d.png)
+
+The distribution density plot of numerical variables is shown in Figure 2. Only the bmi is unimodel. There is a small peak for age and average glucose level. And none of
+the distribution of these three variables can be seen as approximately normal.
+
+![num](https://user-images.githubusercontent.com/53469433/153496937-a716dfc0-f20d-402d-b53b-d20e6fa9dc52.png)
+
+
+Then dummy variables are created for categorical variables. Based on the correlation matrix, work type as focusing on the family and children is correlated with the age, bmi and marital status of the subject, which makes sense for demographical and sociological reasons.
 
 <img align="center" src="https://user-images.githubusercontent.com/53469433/153347482-3f87a25c-6bad-45bc-953b-5ede7e7a0b2d.png" width="600" />
-
-Based on the correlation matrix, work type as focusing on the family and children is correlated with the age, bmi and marital status of the subject, which makes sense for demographical and sociological reasons.
-
 
 
 ## Model selection
